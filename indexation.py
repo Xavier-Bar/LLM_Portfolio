@@ -258,10 +258,14 @@ class PortfolioIndexer:
             vectors = []
             for j, chunk in enumerate(batch):
                 vector_id = f"chunk_{total_indexed + j}"
+                # Fusionner le texte dans les métadonnées pour pouvoir le récupérer
+                metadata_with_text = chunk['metadata'].copy()
+                metadata_with_text['text'] = chunk['text']
+                
                 vectors.append({
                     'id': vector_id,
                     'data': chunk['text'],  # Upstash génère l'embedding automatiquement
-                    'metadata': chunk['metadata']
+                    'metadata': metadata_with_text
                 })
             
             # Upserter dans Upstash Vector
