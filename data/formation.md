@@ -3,9 +3,10 @@
 ## Formation Actuelle
 
 ### BUT Science des Données (BUT SD)
-**IUT de Niort**  
+**Université** : Université de Poitiers, campus de Niort 
 **Durée** : 3 ans (2022-2025)  
 **Statut** : En alternance (3ème année en cours)
+**Lieu** : Niort
 
 #### Objectifs de la formation
 Le Bachelor Universitaire de Technologie Science des Données forme des professionnels capables de collecter, traiter, analyser et valoriser les données dans des contextes variés. La formation allie enseignements théoriques et pratiques professionnalisantes.
@@ -93,9 +94,10 @@ L'alternance m'a permis de trouver ma voie et de comprendre que j'apprends mieux
 ## Formations Antérieures
 
 ### Licence Mathématiques et Informatique
-**Université** : [Nom de l'université]  
+**Université** : Université de Poitiers
 **Année** : 2021-2022  
 **Statut** : Réorientation après 1 an
+**Lieu** : Poitiers
 
 #### Contexte
 Après mon BAC STI2D, j'ai choisi la licence Mathématiques et Informatique par attrait pour les matières proposées. Cependant, le système d'études en licence ne correspondait pas à mes attentes et méthodes d'apprentissage.
@@ -111,9 +113,10 @@ Cette année m'a permis de mieux comprendre mes besoins et préférences en term
 
 ### BAC STI2D
 **BAC Sciences et Technologies de l'Industrie et du Développement Durable**  
-**Lycée** : [Nom du lycée]  
+**Lycée** : Campus de la providence  
 **Année** : 2021  
-**Résultat** : Obtenu
+**Résultat** : Obtenu mention bien
+**Lieu** : Blois
 
 #### Spécialité
 Sciences et Technologies de l'Industrie et du Développement Durable
