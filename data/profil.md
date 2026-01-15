@@ -13,7 +13,28 @@ Je suis une personne calme, sérieuse et logique. J'apprécie passer du temps av
 **BUT Science des Données (BUT SD)**
 - Formation en alternance
 - Troisième année en cours
-- Spécialisation en traitement de données, analyse et automatisation
+
+**En quoi consistent mes études ?**
+
+Le BUT Science des Données est une formation pluridisciplinaire qui combine trois domaines complémentaires :
+- **Mathématiques** : statistiques, probabilités, algèbre linéaire, analyse de données
+- **Informatique** : programmation (Python, R, SQL), bases de données, développement web et logiciel
+- **Statistique** : machine learning, modélisation, data science, visualisation de données
+
+Concrètement, j'apprends à collecter, traiter, analyser et valoriser des données pour aider à la prise de décision dans des contextes variés.
+
+## Mon Alternance chez Pierre Guérin
+
+**Ce que je fais concrètement :**
+
+Je suis alternant dans le service Chiffrage où je travaille sur les données du service pour automatiser et fiabiliser les processus. Mes principales missions :
+- **Développement de macros VBA** pour automatiser les calculs de prix de revient dans Excel
+- **Création d'un tableau de bord dynamique** centralisant les données du chiffrage
+- **Automatisation du traitement de données** provenant de multiples fichiers Excel métiers (électricité, tuyauterie, automatisme)
+- **Conception d'une base de données** pour centraliser les informations sur les équipements
+- **Collaboration avec les services techniques** pour structurer leurs nomenclatures
+
+En résumé : je développe des outils VBA et des tableaux de bord pour automatiser et fiabiliser le travail du service chiffrage sur les données des équipements industriels.
 
 ## Mon Bilan Après Deux Ans
 

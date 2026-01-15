@@ -7,6 +7,21 @@
 **Secteur** : Équipements industriels pour les secteurs biopharmaceutique et agroalimentaire  
 **Durée** : Première année d'alternance (BUT 2)
 
+### Ce que je fais concrètement en alternance
+
+Je travaille sur les données du service Chiffrage pour créer des outils d'automatisation et d'analyse. Concrètement :
+
+**Développement et automatisation :**
+- **Macros VBA** : je développe des macros Excel pour automatiser les calculs de prix de revient
+- **Tableau de bord dynamique** : je conçois des tableaux de bord pour visualiser et analyser les coûts
+- **Automatisation de traitement de données** : je traite automatiquement les données issues de multiples fichiers Excel métiers (électricité, tuyauterie, automatisme)
+
+**Gestion de données :**
+- **Base de données** : j'ai créé et je gère une base de données centralisant les informations sur les équipements
+- **Structuration des nomenclatures** : je travaille avec les services techniques pour organiser leurs données
+
+**Objectif principal :** automatiser, fiabiliser et structurer les outils utilisés par le service chiffrage pour calculer les prix de revient des équipements industriels à partir des données métiers.
+
 ### Description de l'entreprise
 
 Pierre Guérin est une entreprise internationale spécialisée dans la conception d'équipements de process pour les secteurs biopharmaceutique et agroalimentaire. L'entreprise conçoit des équipements industriels de haute technologie.

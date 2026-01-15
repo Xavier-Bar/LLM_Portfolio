@@ -8,6 +8,12 @@
 **Statut** : En alternance (3ème année en cours)
 **Lieu** : Niort
 
+#### Nature de la formation
+Le BUT Science des Données est un diplôme pluridisciplinaire qui s'appuie sur trois piliers fondamentaux :
+- **Mathématiques** : statistiques, probabilités, algèbre linéaire, analyse
+- **Informatique** : programmation, bases de données, développement web et logiciel, algorithmique
+- **Statistique** : analyse de données, machine learning, data science, modélisation
+
 #### Objectifs de la formation
 Le Bachelor Universitaire de Technologie Science des Données forme des professionnels capables de collecter, traiter, analyser et valoriser les données dans des contextes variés. La formation allie enseignements théoriques et pratiques professionnalisantes.
 
