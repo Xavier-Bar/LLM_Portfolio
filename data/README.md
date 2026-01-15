@@ -1,4 +1,6 @@
 # Guide d'Utilisation des Données du Portfolio
+##### J'ai pu généré les fichiers markdown avec un requête IA en lui fournissant l'ensemble des informations et fichiers de mon portfolio. J'ai par la suite ajusté les fichiers markdown pour mieux répondre à des questions que je pouvais imaginer posé (combien de projet en python ? --> Ajout des langages utilisées par projet, etc...)
+
 
 ## Structure des Fichiers
 

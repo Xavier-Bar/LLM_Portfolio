@@ -1,20 +1,19 @@
 """
-Agent portfolio basé sur openai-agents, avec Tool RAG vers Upstash Vector.
+Agent portfolio basé sur openai-agents, avec Upstash Vector, Tool et RAG.
 
-Cet agent respecte le sujet du projet :
 - utilise la librairie `openai-agents`
 - modèle `gpt-4.1-nano`
 - Tool pour interroger la base vectorielle Upstash
 """
 
+# Imports
 import os
 from typing import List
-
 from dotenv import load_dotenv
 from upstash_vector import Index
-
 from agents import Agent, Runner, ModelSettings, function_tool
 
+# Overrride pour forcer le rechargement des variables d'environnement
 load_dotenv(override=True)
 
 
@@ -27,18 +26,16 @@ vector_index = Index(
 
 @function_tool
 def search_portfolio(query: str, k: int = 5) -> str:
-    """Recherche des informations sur le portfolio de Xavier dans l'index Upstash.
+    """Recherche des informations dans l'index d'Upstash Vector.
 
     Args:
         query: Question ou mots-clés sur le profil / compétences / projets.
-        k: Nombre maximum de passages pertinents à retourner (défaut: 5).
+        k: Nombre maximum de passages pertinents à retourner.
 
     Retourne une concaténation de passages pertinents (texte brut) issus
     des fichiers Markdown du dossier data, déjà indexés dans Upstash.
     
-    IMPORTANT: Tu peux appeler cette fonction plusieurs fois avec des requêtes
-    différentes pour rassembler toutes les informations nécessaires.
-    Privilégie des recherches ciblées avec k réduit pour des réponses concises.
+    Reminder : Privilégie des recherches ciblées avec k réduit pour des réponses concises.
     """
     results = vector_index.query(
         data=query,
@@ -68,16 +65,16 @@ def search_portfolio(query: str, k: int = 5) -> str:
 
 
 def build_portfolio_agent() -> Agent:
-    """Construit un agent openai-agents spécialisé sur le portfolio.
-
+    """
     - Modèle : gpt-4.1-nano (comme indiqué dans le sujet)
     - Utilise la Tool `search_portfolio` pour le RAG
-    - Parle à la 1ère personne comme si l'agent était Xavier
+    - Parle à la 1ère personne comme si l'agent était moi ( Xavier Barbeau )
     """
 
+    # Instructions détaillées pour l'agent LLM
     instructions = (
         "Tu es un assistant IA qui représente Xavier Barbeau, "
-        "étudiant en BUT Science des Données en alternance chez Pierre Guérin.\n\n"
+        "étudiant en BUT Science des Données et en alternance chez Pierre Guérin.\n\n"
         
         "=== RÈGLES FONDAMENTALES ===\n"
         "1. TOUJOURS répondre à la 1ère personne (je, mon, mes) comme Xavier\n"

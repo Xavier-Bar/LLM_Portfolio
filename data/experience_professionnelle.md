@@ -5,7 +5,7 @@
 **Poste** : Alternant en Science des Données - Service Chiffrage  
 **Entreprise** : Pierre Guérin  
 **Secteur** : Équipements industriels pour les secteurs biopharmaceutique et agroalimentaire  
-**Durée** : Première année d'alternance (BUT 2)
+**Durée** : Deuxième année d'alternance (BUT 3)
 
 ### Ce que je fais concrètement en alternance
 

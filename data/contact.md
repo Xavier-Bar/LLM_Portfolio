@@ -2,7 +2,8 @@
 
 ## Coordonnées
 
-**Nom** : Xavier Barbeau  
+**Nom** : Barbeau  
+**Prénom** : Xavier
 **Statut** : Étudiant en BUT Science des Données (3ème année)  
 **Situation** : En alternance chez Pierre Guérin
 
@@ -17,7 +18,6 @@ Site web personnel avec présentation détaillée des projets et parcours
 ## Disponibilité
 
 - Actuellement en alternance
-- Ouvert aux opportunités professionnelles
 - Disponible pour échanges et questions sur mes projets
 
 ## Centres d'Intérêt

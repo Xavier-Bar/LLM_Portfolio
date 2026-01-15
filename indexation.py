@@ -20,9 +20,25 @@ load_dotenv()
 DATA_DIR = Path("data")
 CHUNK_SIZE = 1000  # Nombre de caractères approximatif par chunk
 
-
 class MarkdownChunker:
     """Classe pour découper les documents Markdown en chunks intelligents"""
+    
+    # Compiler la regex une seule fois pour améliorer les performances
+    HEADING_PATTERN = re.compile(r'^(#{1,4})\s+(.+?)$')
+    
+    # Mapping pour la classification des sections
+    SECTION_KEYWORDS = {
+        'projet': 'projet',
+        'competence': 'competence',
+        'compétence': 'competence',
+        'experience': 'experience',
+        'expérience': 'experience',
+        'alternance': 'experience',
+        'formation': 'formation',
+        'profil': 'profil',
+        'propos': 'profil',
+        'contact': 'contact'
+    }
     
     def __init__(self, chunk_size: int = CHUNK_SIZE):
         self.chunk_size = chunk_size
@@ -39,47 +55,27 @@ class MarkdownChunker:
             Liste de dictionnaires contenant les chunks et leurs métadonnées
         """
         chunks = []
-        
-        # Pattern pour détecter les titres Markdown
-        # Capture le niveau de titre, le titre et le contenu jusqu'au prochain titre
-        pattern = r'^(#{1,4})\s+(.+?)$'
-        
         lines = content.split('\n')
         current_chunk = []
-        current_metadata = {
-            'source': file_name,
-            'level': 0,
-            'title': file_name.replace('.md', '').replace('_', ' ').title(),
-            'hierarchy': []
-        }
-        
+        current_metadata = self._create_initial_metadata(file_name)
         title_stack = []  # Pour garder trace de la hiérarchie des titres
         
         for line in lines:
-            match = re.match(pattern, line)
+            match = self.HEADING_PATTERN.match(line)
             
             if match:
-                # Si on a du contenu accumulé, on le sauvegarde
-                if current_chunk:
-                    chunk_text = '\n'.join(current_chunk).strip()
-                    if chunk_text:  # Ignorer les chunks vides
-                        chunks.append({
-                            'text': chunk_text,
-                            'metadata': current_metadata.copy()
-                        })
+                # Sauvegarder le chunk précédent s'il existe
+                self._save_chunk(chunks, current_chunk, current_metadata)
                 
                 # Nouveau titre détecté
-                level = len(match.group(1))  # Nombre de #
+                level = len(match.group(1))
                 title = match.group(2).strip()
                 
                 # Mettre à jour la hiérarchie des titres
-                # Supprimer les titres de niveau inférieur ou égal
                 while title_stack and title_stack[-1]['level'] >= level:
                     title_stack.pop()
                 
                 title_stack.append({'level': level, 'title': title})
-                
-                # Créer la hiérarchie complète
                 hierarchy = [t['title'] for t in title_stack]
                 
                 # Préparer les métadonnées pour le prochain chunk
@@ -91,41 +87,43 @@ class MarkdownChunker:
                     'section_type': self._classify_section(file_name, title)
                 }
                 
-                # Réinitialiser le chunk avec le titre
                 current_chunk = [line]
             else:
                 current_chunk.append(line)
         
         # Sauvegarder le dernier chunk
+        self._save_chunk(chunks, current_chunk, current_metadata)
+        
+        return chunks
+    
+    def _create_initial_metadata(self, file_name: str) -> Dict[str, Any]:
+        """Crée les métadonnées initiales pour un fichier"""
+        return {
+            'source': file_name,
+            'level': 0,
+            'title': file_name.replace('.md', '').replace('_', ' ').title(),
+            'hierarchy': []
+        }
+    
+    def _save_chunk(self, chunks: List[Dict[str, Any]], current_chunk: List[str], metadata: Dict[str, Any]):
+        """Sauvegarde un chunk s'il contient du texte"""
         if current_chunk:
             chunk_text = '\n'.join(current_chunk).strip()
             if chunk_text:
                 chunks.append({
                     'text': chunk_text,
-                    'metadata': current_metadata.copy()
+                    'metadata': metadata.copy()
                 })
-        
-        return chunks
     
     def _classify_section(self, file_name: str, title: str) -> str:
         """Classifie le type de section pour faciliter la recherche"""
-        file_lower = file_name.lower()
-        title_lower = title.lower()
+        combined_text = f"{file_name} {title}".lower()
         
-        if 'projet' in file_lower or 'projet' in title_lower:
-            return 'projet'
-        elif 'competence' in file_lower or 'compétence' in title_lower:
-            return 'competence'
-        elif 'experience' in file_lower or 'expérience' in title_lower or 'alternance' in title_lower:
-            return 'experience'
-        elif 'formation' in file_lower or 'formation' in title_lower:
-            return 'formation'
-        elif 'profil' in file_lower or 'propos' in title_lower:
-            return 'profil'
-        elif 'contact' in file_lower:
-            return 'contact'
-        else:
-            return 'general'
+        for keyword, section_type in self.SECTION_KEYWORDS.items():
+            if keyword in combined_text:
+                return section_type
+        
+        return 'general'
     
     def split_large_chunks(self, chunks: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         """
@@ -138,53 +136,47 @@ class MarkdownChunker:
             Liste de chunks avec tailles optimisées
         """
         optimized_chunks = []
+        max_size = self.chunk_size * 1.5
         
         for chunk in chunks:
-            text = chunk['text']
-            metadata = chunk['metadata']
-            
-            if len(text) <= self.chunk_size * 1.5:
-                # Le chunk est de taille acceptable
+            if len(chunk['text']) <= max_size:
                 optimized_chunks.append(chunk)
             else:
-                # Diviser le chunk par paragraphes
-                paragraphs = text.split('\n\n')
-                current_text = []
-                current_length = 0
-                part_num = 1
-                
-                for para in paragraphs:
-                    para_length = len(para)
-                    
-                    if current_length + para_length > self.chunk_size and current_text:
-                        # Sauvegarder le chunk actuel
-                        optimized_chunks.append({
-                            'text': '\n\n'.join(current_text),
-                            'metadata': {
-                                **metadata,
-                                'part': part_num,
-                                'is_split': True
-                            }
-                        })
-                        current_text = [para]
-                        current_length = para_length
-                        part_num += 1
-                    else:
-                        current_text.append(para)
-                        current_length += para_length
-                
-                # Sauvegarder le dernier morceau
-                if current_text:
-                    optimized_chunks.append({
-                        'text': '\n\n'.join(current_text),
-                        'metadata': {
-                            **metadata,
-                            'part': part_num,
-                            'is_split': True
-                        }
-                    })
+                optimized_chunks.extend(self._split_chunk_by_paragraphs(chunk))
         
         return optimized_chunks
+    
+    def _split_chunk_by_paragraphs(self, chunk: Dict[str, Any]) -> List[Dict[str, Any]]:
+        """Divise un chunk par paragraphes"""
+        paragraphs = chunk['text'].split('\n\n')
+        parts = []
+        current_text = []
+        current_length = 0
+        part_num = 1
+        
+        for para in paragraphs:
+            para_length = len(para)
+            
+            if current_length + para_length > self.chunk_size and current_text:
+                parts.append(self._create_split_chunk(current_text, chunk['metadata'], part_num))
+                current_text = [para]
+                current_length = para_length
+                part_num += 1
+            else:
+                current_text.append(para)
+                current_length += para_length
+        
+        if current_text:
+            parts.append(self._create_split_chunk(current_text, chunk['metadata'], part_num))
+        
+        return parts
+    
+    def _create_split_chunk(self, text_parts: List[str], metadata: Dict[str, Any], part_num: int) -> Dict[str, Any]:
+        """Crée un chunk splitté avec ses métadonnées"""
+        return {
+            'text': '\n\n'.join(text_parts),
+            'metadata': {**metadata, 'part': part_num, 'is_split': True}
+        }
 
 
 class PortfolioIndexer:
@@ -206,16 +198,11 @@ class PortfolioIndexer:
         Returns:
             Dictionnaire {nom_fichier: contenu}
         """
-        documents = {}
-        
-        for md_file in DATA_DIR.glob("*.md"):
-            if md_file.name == "README.md":
-                continue  # Ignorer le README
-            
-            with open(md_file, 'r', encoding='utf-8') as f:
-                documents[md_file.name] = f.read()
-        
-        return documents
+        return {
+            md_file.name: md_file.read_text(encoding='utf-8')
+            for md_file in DATA_DIR.glob("*.md")
+            if md_file.name != "README.md"
+        }
     
     def index_documents(self, batch_size: int = 10):
         """
@@ -234,11 +221,11 @@ class PortfolioIndexer:
         
         # 2. Découper en chunks
         print("\n✂️  Découpage des documents en chunks...")
-        all_chunks = []
-        for file_name, content in documents.items():
-            chunks = self.chunker.extract_sections(content, file_name)
-            all_chunks.extend(chunks)
-        
+        all_chunks = [
+            chunk
+            for file_name, content in documents.items()
+            for chunk in self.chunker.extract_sections(content, file_name)
+        ]
         print(f"   ✓ {len(all_chunks)} chunks extraits")
         
         # 3. Optimiser les tailles de chunks
@@ -252,29 +239,25 @@ class PortfolioIndexer:
         
         for i in range(0, len(optimized_chunks), batch_size):
             batch = optimized_chunks[i:i + batch_size]
+            vectors = self._prepare_vectors(batch, total_indexed)
             
-            # Préparer les données pour Upstash (avec data au lieu de vector)
-            # Upstash génère automatiquement les embeddings à partir du texte
-            vectors = []
-            for j, chunk in enumerate(batch):
-                vector_id = f"chunk_{total_indexed + j}"
-                # Fusionner le texte dans les métadonnées pour pouvoir le récupérer
-                metadata_with_text = chunk['metadata'].copy()
-                metadata_with_text['text'] = chunk['text']
-                
-                vectors.append({
-                    'id': vector_id,
-                    'data': chunk['text'],  # Upstash génère l'embedding automatiquement
-                    'metadata': metadata_with_text
-                })
-            
-            # Upserter dans Upstash Vector
             self.vector_index.upsert(vectors=vectors)
             
             total_indexed += len(batch)
             print(f"   ✓ {total_indexed}/{len(optimized_chunks)} chunks indexés")
         
         print(f"\n✅ Indexation terminée ! {total_indexed} chunks indexés avec succès.")
+    
+    def _prepare_vectors(self, chunks: List[Dict[str, Any]], offset: int) -> List[Dict[str, Any]]:
+        """Prépare les vecteurs pour l'upsert dans Upstash"""
+        return [
+            {
+                'id': f"chunk_{offset + j}",
+                'data': chunk['text'],
+                'metadata': {**chunk['metadata'], 'text': chunk['text']}
+            }
+            for j, chunk in enumerate(chunks)
+        ]
     
     def get_index_stats(self):
         """Affiche les statistiques de l'index"""
