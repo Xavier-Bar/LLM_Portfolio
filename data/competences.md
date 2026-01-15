@@ -1,76 +1,72 @@
-# Compétences
+# Compétences Techniques
 
-## Compétences Techniques
+## Programmation
 
-### Programmation et Développement
+### Python
+**Niveau** : Avancé
 
-#### Python
-- **Niveau** : Avancé
-- **Applications** :
-  - Développement d'applications de gestion avec tkinter
-  - Scripts d'automatisation et traitement de données
-  - Web scraping et utilisation d'APIs
-  - Analyse de données avec pandas
-  - Visualisation avec Matplotlib, Folium
-  - Machine learning et modélisation statistique
+- Développement d'applications avec tkinter
+- Scripts d'automatisation et traitement de données
+- Web scraping et utilisation d'APIs
+- Analyse de données avec pandas
+- Visualisation avec Matplotlib, Folium
+- Machine learning et modélisation statistique
 
-#### VBA (Excel)
-- **Niveau** : Avancé
-- **Applications** :
-  - Développement de macros complexes pour l'automatisation
-  - Création d'applications de gestion métiers
-  - Traitement automatisé de données Excel
-  - Interfaces utilisateur dynamiques
-  - Expérience professionnelle en alternance
+### VBA Excel
+**Niveau** : Avancé
 
-#### Langages Web
-- **HTML/CSS** : Développement de sites web et portfolios
-- **JavaScript** : Interactions et fonctionnalités dynamiques
-- **PHP** : Sites web dynamiques avec bases de données
-- **MySQL** : Gestion de bases de données relationnelles
+- Développement de macros complexes
+- Automatisation de calculs et processus
+- Applications de gestion métiers
+- Interfaces utilisateur dynamiques
+- Expérience en alternance professionnelle
 
-#### R
-- **Niveau** : Intermédiaire
-- **Applications** :
-  - Analyses statistiques et modélisation
-  - Régression linéaire et prédictive
-  - Échantillonnage et estimation
-  - Traitement de séries temporelles
+### R
+**Niveau** : Intermédiaire
 
-### Bases de Données
+- Analyses statistiques et modélisation
+- Régression linéaire et prédictive
+- Séries temporelles et prévisions
+- Échantillonnage et estimation
 
-- **Conception** : MCD, MLD, modélisation de données
-- **SQL** : Requêtes complexes, création et gestion de bases
+### Web
+- **HTML/CSS** : Sites web et portfolios
+- **JavaScript** : Interactions dynamiques
+- **PHP** : Applications web avec bases de données
+- **MySQL** : Gestion de bases de données
+
+## Bases de Données
+
+- **Conception** : MCD, MLD, modélisation
+- **SQL** : Requêtes complexes, gestion avancée
 - **MySQL** : Implémentation et administration
-- **Excel** : Gestion de données, tableaux croisés dynamiques, formules avancées
+- **Excel** : Formules avancées, tableaux croisés dynamiques
 
-### Analyse et Traitement de Données
+## Analyse de Données
 
-#### Collecte et Préparation
+### Collecte et Préparation
 - Web scraping (Python)
-- Utilisation d'APIs (GeoNames, etc.)
+- Utilisation d'APIs REST (GeoNames, etc.)
 - Nettoyage et structuration de données
-- Transformation de formats (JSON vers CSV)
-- Import/Export de données multiples formats
+- Transformation de formats (JSON, CSV, Excel)
 
-#### Analyse Statistique
+### Analyse Statistique
 - Modélisation statistique
 - Régression linéaire et non-linéaire
-- Échantillonnage et estimation
 - Séries temporelles
 - Prévisions économiques
-- Analyse de variance
+- Échantillonnage et estimation
 
-#### Visualisation de Données
+### Visualisation
 - **Power BI** : Tableaux de bord interactifs, datavisualisation avancée
-- **Python** : Folium (cartes interactives), Matplotlib, graphiques
+- **Python** : Folium (cartes interactives), Matplotlib
 - **Excel** : Graphiques dynamiques, tableaux de bord
-- **Tkinter** : Interfaces graphiques avec visualisations intégrées
+- **Tkinter** : Interfaces graphiques avec visualisations
 
-### Outils et Logiciels
+## Outils et Logiciels
 
-- **Microsoft Excel** : Niveau expert (macros VBA, tableaux de bord, formules avancées)
-- **Power BI** : Création de rapports et tableaux de bord interactifs
+- **Microsoft Excel** : Niveau expert (VBA, tableaux de bord, formules avancées)
+- **Power BI** : Rapports et dashboards interactifs
 - **Git/GitHub** : Gestion de versions et collaboration
 - **Visual Studio Code** : Développement multi-langages
 - **RStudio** : Développement et analyse en R
@@ -79,95 +75,18 @@
 
 ### Gestion de Projet
 - Travail en équipe et collaboration
-- Organisation et planification
 - Méthodologie agile
 - Documentation technique
-- Respect des délais
+- Organisation et planification
 
-### Analyse et Résolution de Problèmes
+### Résolution de Problèmes
 - Approche logique et structurée
 - Identification des besoins métiers
 - Conception de solutions automatisées
 - Optimisation de processus
-- Fiabilisation de méthodes
 
 ### Communication
 - Rédaction de rapports techniques
 - Présentation de résultats (français et anglais)
-- Documentation utilisateur
 - Collaboration avec services métiers
 - Vulgarisation de concepts techniques
-
-## Compétences Transversales
-
-### Autonomie et Apprentissage
-- Apprentissage en autonomie
-- Veille technologique
-- Résolution de problèmes de manière indépendante
-- Capacité d'adaptation
-- Curiosité technique
-
-### Rigueur et Organisation
-- Attention aux détails
-- Gestion du temps efficace
-- Structuration du travail
-- Qualité des livrables
-- Respect des normes et standards
-
-### Travail d'Équipe
-- Collaboration sur des projets complexes
-- Partage de connaissances
-- Communication efficace
-- Adaptabilité aux différents profils
-- Expérience en binôme et en groupe
-
-## Domaines d'Expertise
-
-### Science des Données
-- Data cleaning et préparation
-- Analyse exploratoire
-- Modélisation statistique
-- Machine learning
-- Reporting et visualisation
-
-### Business Intelligence
-- Tableaux de bord décisionnels
-- Indicateurs de performance (KPI)
-- Analyse de données métiers
-- Outils d'aide à la décision
-- Automatisation de rapports
-
-### Développement d'Applications
-- Applications de gestion
-- Interfaces utilisateur intuitives
-- Automatisation de tâches
-- Intégration de bases de données
-- Solutions métiers sur mesure
-
-## Langues
-
-### Français
-- **Niveau** : Langue maternelle
-- Rédaction de rapports techniques
-- Présentation de projets
-
-### Anglais
-- **Niveau** : Intermédiaire à avancé (B2)
-- Lecture et compréhension de documentation technique
-- Séries et contenus en version originale
-- Présentation de projets (présentation sur l'Islande)
-- Amélioration continue par immersion régulière
-
-## Certifications et Formations
-
-- **BUT Science des Données** - En cours (3ème année)
-- **BAC STI2D** (Sciences et Technologies de l'Industrie et du Développement Durable)
-- Première place promotion - Concours national datavisualisation BUT SD
-
-## Points Forts Professionnels
-
-1. **Automatisation** : Capacité à identifier et automatiser des tâches répétitives
-2. **Pragmatisme** : Focus sur des solutions concrètes et applicables
-3. **Apprentissage pratique** : Excellente capacité d'apprentissage par la pratique
-4. **Polyvalence technique** : Maîtrise de multiples langages et outils
-5. **Impact mesurable** : Développement d'outils avec valeur ajoutée directe
