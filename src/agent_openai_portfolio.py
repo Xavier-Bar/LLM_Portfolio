@@ -1,11 +1,3 @@
-"""
-Agent portfolio basé sur openai-agents, avec Upstash Vector, Tool et RAG.
-
-- utilise la librairie `openai-agents`
-- modèle `gpt-4.1-nano`
-- Tool pour interroger la base vectorielle Upstash
-"""
-
 # Imports
 import os
 from typing import List
@@ -66,15 +58,15 @@ def search_portfolio(query: str, k: int = 5) -> str:
 
 def build_portfolio_agent() -> Agent:
     """
-    - Modèle : gpt-4.1-nano (comme indiqué dans le sujet)
+    - Modèle : gpt-4.1-nano
     - Utilise la Tool `search_portfolio` pour le RAG
     - Parle à la 1ère personne comme si l'agent était moi ( Xavier Barbeau )
     """
 
     # Instructions détaillées pour l'agent LLM
     instructions = (
-        "Tu es un assistant IA qui représente Xavier Barbeau, "
-        "étudiant en BUT Science des Données et en alternance chez Pierre Guérin.\n\n"
+        "Tu es un assistant IA qui représente Xavier Barbeau."
+        "Xavier est étudiant en BUT Science des Données et en alternance chez Pierre Guérin.\n\n"
         
         "=== RÈGLES FONDAMENTALES ===\n"
         "1. TOUJOURS répondre à la 1ère personne (je, mon, mes) comme Xavier\n"
@@ -118,10 +110,10 @@ def build_portfolio_agent() -> Agent:
 def main() -> None:
     """Petit script de test pour l'agent openai-agents."""
     if not os.getenv("OPENAI_API_KEY"):
-        print("❌ OPENAI_API_KEY manquant dans le .env")
+        print("OPENAI_API_KEY manquant dans le .env")
         return
     if not os.getenv("UPSTASH_VECTOR_REST_URL") or not os.getenv("UPSTASH_VECTOR_REST_TOKEN"):
-        print("❌ Variables Upstash manquantes dans le .env")
+        print("Variables Upstash manquantes dans le .env")
         return
 
     print("=" * 70)

@@ -1,8 +1,6 @@
-# Compétences Techniques
+# Programmation
 
-## Programmation
-
-### Python
+## Python
 **Niveau** : Avancé
 
 - Développement d'applications avec tkinter
@@ -12,7 +10,7 @@
 - Visualisation avec Matplotlib, Folium
 - Machine learning et modélisation statistique
 
-### VBA Excel
+## VBA Excel
 **Niveau** : Avancé
 
 - Développement de macros complexes
@@ -21,7 +19,7 @@
 - Interfaces utilisateur dynamiques
 - Expérience en alternance professionnelle
 
-### R
+## R
 **Niveau** : Intermédiaire
 
 - Analyses statistiques et modélisation
@@ -29,41 +27,41 @@
 - Séries temporelles et prévisions
 - Échantillonnage et estimation
 
-### Web
+## Web
 - **HTML/CSS** : Sites web et portfolios
 - **JavaScript** : Interactions dynamiques
 - **PHP** : Applications web avec bases de données
 - **MySQL** : Gestion de bases de données
 
-## Bases de Données
+# Bases de Données
 
 - **Conception** : MCD, MLD, modélisation
 - **SQL** : Requêtes complexes, gestion avancée
 - **MySQL** : Implémentation et administration
 - **Excel** : Formules avancées, tableaux croisés dynamiques
 
-## Analyse de Données
+# Analyse de Données
 
-### Collecte et Préparation
+## Collecte et Préparation
 - Web scraping (Python)
 - Utilisation d'APIs REST (GeoNames, etc.)
 - Nettoyage et structuration de données
 - Transformation de formats (JSON, CSV, Excel)
 
-### Analyse Statistique
+## Analyse Statistique
 - Modélisation statistique
 - Régression linéaire et non-linéaire
 - Séries temporelles
 - Prévisions économiques
 - Échantillonnage et estimation
 
-### Visualisation
+## Visualisation
 - **Power BI** : Tableaux de bord interactifs, datavisualisation avancée
 - **Python** : Folium (cartes interactives), Matplotlib
 - **Excel** : Graphiques dynamiques, tableaux de bord
 - **Tkinter** : Interfaces graphiques avec visualisations
 
-## Outils et Logiciels
+# Outils et Logiciels
 
 - **Microsoft Excel** : Niveau expert (VBA, tableaux de bord, formules avancées)
 - **Power BI** : Rapports et dashboards interactifs
@@ -71,21 +69,21 @@
 - **Visual Studio Code** : Développement multi-langages
 - **RStudio** : Développement et analyse en R
 
-## Compétences Méthodologiques
+# Compétences Méthodologiques
 
-### Gestion de Projet
+## Gestion de Projet
 - Travail en équipe et collaboration
 - Méthodologie agile
 - Documentation technique
 - Organisation et planification
 
-### Résolution de Problèmes
+## Résolution de Problèmes
 - Approche logique et structurée
 - Identification des besoins métiers
 - Conception de solutions automatisées
 - Optimisation de processus
 
-### Communication
+## Communication
 - Rédaction de rapports techniques
 - Présentation de résultats (français et anglais)
 - Collaboration avec services métiers

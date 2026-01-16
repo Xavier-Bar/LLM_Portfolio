@@ -1,18 +1,9 @@
-"""Interface de chat Streamlit pour l’agent portfolio basé sur openai-agents.
-
-- Utilise `build_portfolio_agent` défini dans `portfolio_agent_openai_agents.py`
-- Modèle : gpt-4.1-nano
-- RAG via la Tool `search_portfolio` (Upstash Vector)
-"""
-
+# Imports
 import os
-
 import streamlit as st
 from dotenv import load_dotenv
-
-from portfolio_agent_openai_agents import build_portfolio_agent
+from src.agent_openai_portfolio import build_portfolio_agent
 from agents import Runner
-
 
 load_dotenv(override=True)
 
@@ -208,7 +199,7 @@ def main() -> None:
                     result = Runner.run_sync(agent, user_input)
                     answer = result.final_output.strip()
                 except Exception as e:
-                    answer = f"❌ Une erreur est survenue : {e}"
+                    answer = f"Une erreur est survenue : {e}"
                 st.markdown(answer)
 
         # Sauvegarder la réponse dans l’historique

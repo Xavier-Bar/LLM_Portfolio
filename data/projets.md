@@ -1,8 +1,6 @@
-# Projets Académiques
+# BUT 2 - Deuxième Année
 
-## BUT 2 - Deuxième Année
-
-### Flash Prévisions Économiques Mexique
+## Flash Prévisions Économiques Mexique
 **Technologies** : R, séries temporelles  
 **Équipe** : Individuel  
 **Année** : 2024
@@ -11,7 +9,7 @@ Prévision des importations du Mexique à partir de séries temporelles mensuell
 
 **Compétences** : Séries temporelles, modélisation statistique, prévisions économiques, R
 
-### Site Web Dynamique Ordiginal
+## Site Web Dynamique Ordiginal
 **Technologies** : PHP, MySQL, JavaScript, HTML, CSS  
 **Équipe** : Chloé DECOUST, Camille DELEZINIER  
 **Année** : 2024
@@ -20,7 +18,7 @@ Site de vente d'ordinateurs avec gestion de produits, interface d'administration
 
 **Compétences** : Développement web full-stack, gestion de bases de données, visualisation
 
-### Application Recrutement Football
+## Application Recrutement Football
 **Technologies** : VBA Excel  
 **Équipe** : Rémi PIERRON  
 **Année** : 2024
@@ -29,7 +27,7 @@ Application pour gérer les tests de sélection de la section sportive Football 
 
 **Compétences** : VBA, automatisation, interfaces utilisateur, traitement temps réel
 
-### Collecte Données Web Islande
+## Collecte Données Web Islande
 **Technologies** : Python, API GeoNames, Folium, pandas  
 **Équipe** : Chloé DECOUST, Andrea ANDREOLI, Elliot FEROUX  
 **Année** : 2024
@@ -38,9 +36,9 @@ Application Python pour collecter des données géographiques via API GeoNames s
 
 **Compétences** : Web scraping, APIs REST, cartographie interactive, pandas
 
-## BUT 1 - Première Année
+# BUT 1 - Première Année
 
-### Analyse AcVC - Accidents Vie Courante
+## Analyse AcVC - Accidents Vie Courante
 **Technologies** : Python, tkinter, Power BI, Excel  
 **Équipe** : Chloé DECOUST, Rémi PIERRON, Hélène VIZOSO, Leslie PLANET  
 **Année** : 2023
@@ -49,7 +47,7 @@ Outil dynamique d'analyse des Accidents de la Vie Courante en France. Interface 
 
 **Compétences** : Analyse de données, tkinter, Power BI, automatisation, travail d'équipe
 
-### Portfolio Numérique Personnel
+## Portfolio Numérique Personnel
 **Technologies** : HTML, CSS, JavaScript  
 **Équipe** : Individuel  
 **Année** : 2023
@@ -58,7 +56,7 @@ Portfolio web pour mettre en valeur mes compétences et réalisations. Sections 
 
 **Compétences** : HTML/CSS avancé, design web, ergonomie UX
 
-### Concours Datavisualisation Climat
+## Concours Datavisualisation Climat
 **Technologies** : Power BI  
 **Équipe** : Chloé DECOUST, Rémi PIERRON, Hélène VIZOSO, Leslie PLANET  
 **Année** : 2023  
@@ -68,7 +66,7 @@ Concours national BUT SD réalisé en une journée. Problématique : "Le changem
 
 **Compétences** : Datavisualisation avancée, Power BI, analyse climatique, travail sous pression
 
-### Analyse Financière Poujoulat SA
+## Analyse Financière Poujoulat SA
 **Technologies** : Excel  
 **Équipe** : Leslie PLANET  
 **Année** : 2023
@@ -77,7 +75,7 @@ Analyse financière de Poujoulat SA (leader européen conduits de cheminée). Ta
 
 **Compétences** : Analyse financière, indicateurs de performance, tableaux de bord Excel
 
-### Estimation Population Centre-Val-de-Loire
+## Estimation Population Centre-Val-de-Loire
 **Technologies** : R  
 **Équipe** : Chloé DECOUST  
 **Année** : 2023
@@ -86,7 +84,7 @@ Estimation statistique de la population française par communes avec focus sur C
 
 **Compétences** : Statistiques inférentielles, échantillonnage, intervalles de confiance, R
 
-### Prédiction Prix Immobilier Paris
+## Prédiction Prix Immobilier Paris
 **Technologies** : R  
 **Équipe** : Romain FAUCHER  
 **Année** : 2023
@@ -95,7 +93,7 @@ Machine learning pour prédire les prix de vente des logements à Paris (S1 2023
 
 **Compétences** : Machine learning, régression linéaire, modélisation prédictive, R
 
-### Base de Données SDIS 79
+## Base de Données SDIS 79
 **Technologies** : Python, tkinter, MySQL  
 **Équipe** : Chloé DECOUST, Assia ABDELLATIFI  
 **Année** : 2023
@@ -104,7 +102,7 @@ Application de gestion des alertes du SDIS 79 (Service Départemental d'Incendie
 
 **Compétences** : Conception bases de données, SQL, Python tkinter, analyse besoins métiers
 
-### Application PanNote
+## Application PanNote
 **Technologies** : VBA Excel  
 **Équipe** : Chloé DECOUST  
 **Année** : 2023
@@ -113,7 +111,7 @@ Application de gestion des notes étudiants BUT SD1. Ajout/modification/suppress
 
 **Compétences** : VBA Excel, interfaces utilisateur, automatisation calculs, logique de gestion
 
-### Transformation JSON vers CSV
+## Transformation JSON vers CSV
 **Technologies** : Python  
 **Équipe** : Chloé DECOUST  
 **Année** : 2023
@@ -122,7 +120,7 @@ Script Python pour convertir un fichier JSON de la CNAM (comorbidités) en CSV s
 
 **Compétences** : Traitement JSON, Python ETL, nettoyage de données, transformation formats
 
-### Présentation Islande Bilingue
+## Présentation Islande Bilingue
 **Technologies** : PowerPoint, Recherche documentaire  
 **Équipe** : Leslie PLANET, Chloé DECOUST  
 **Année** : 2023
@@ -131,7 +129,7 @@ Présentation bilingue (anglais/français) sur l'Islande. Partie anglaise : aspe
 
 **Compétences** : Présentation bilingue, recherche documentaire, communication anglais
 
-## Collaborations Fréquentes
+# Collaborations Fréquentes
 
 J'ai travaillé à plusieurs reprises avec :
 - **Chloé DECOUST** : 8 projets (AcVC, PanNote, SDIS 79, JSON, Estimation population, Ordiginal, Islande données, Présentation Islande)
