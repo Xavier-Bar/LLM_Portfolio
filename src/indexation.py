@@ -123,18 +123,3 @@ def index_chunks(chunks: List[Dict[str, Any]]):
     index.upsert(vectors=vectors)
     print(f"{total}/{total} chunks indexés")
     print("Indexation terminée !")
-
-
-if __name__ == "__main__":
-    print("=" * 60)
-    print("INDEXATION DU PORTFOLIO")
-    print("=" * 60)
-    
-    # Découpage
-    print("\nDécoupage des fichiers...")
-    chunks = chunk_directory("data")
-    print(f"{len(chunks)} chunks créés")
-    
-    # Indexation
-    print()
-    index_chunks(chunks)

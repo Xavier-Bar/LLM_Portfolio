@@ -105,37 +105,3 @@ def build_portfolio_agent() -> Agent:
     )
 
     return agent
-
-
-def main() -> None:
-    """Petit script de test pour l'agent openai-agents."""
-    if not os.getenv("OPENAI_API_KEY"):
-        print("OPENAI_API_KEY manquant dans le .env")
-        return
-    if not os.getenv("UPSTASH_VECTOR_REST_URL") or not os.getenv("UPSTASH_VECTOR_REST_TOKEN"):
-        print("Variables Upstash manquantes dans le .env")
-        return
-
-    print("=" * 70)
-    print("AGENT PORTFOLIO (openai-agents)")
-    print("=" * 70)
-
-    agent = build_portfolio_agent()
-
-    questions = [
-        "Qui es-tu ?",
-        "Quelles sont tes compétences principales ?",
-        "Parle-moi de ton alternance chez Pierre Guérin.",
-        "Quel projet as-tu réalisé sur le changement climatique ?",
-    ]
-
-    for q in questions:
-        print("\n" + "-" * 70)
-        print("Question :", q)
-        print("-" * 70)
-        result = Runner.run_sync(agent, q)
-        print("Réponse :", result.final_output.strip())
-
-
-if __name__ == "__main__":
-    main()
