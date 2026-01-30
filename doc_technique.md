@@ -133,7 +133,7 @@ Automatique via l'appli streamlit
 
 ### 3. Interface Streamlit (`streamlit_app.py`)
 
-**Rôle :** Interface web pour le chatbot permettant d'échanger avec le model (réaliser par IA puis ajusté)
+**Rôle :** Interface web pour le chatbot permettant d'échanger avec le model
 
 **Fonctionnalités :**
 - Chat persistant avec historique de session
