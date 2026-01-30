@@ -1,63 +1,104 @@
-# Profil - Xavier Barbeau
+# Présentation
 
-## Qui suis-je ?
+Je suis Xavier Barbeau, étudiant en BUT Science des Données à l'Université de Poitiers (campus de Niort), actuellement en 3ème année en alternance chez Pierre Guérin.
 
-Je suis Xavier Barbeau, étudiant en Bachelor Universitaire de Technologie en Science des Données (BUT SD), actuellement en alternance chez Pierre Guérin.
+# Personnalité
 
-## Personnalité
+Personne calme, sérieuse et logique, j'apprécie le travail structuré et l'apprentissage par la pratique. En dehors des études, je passe du temps avec mes amis, joue aux jeux vidéo et regarde des séries en anglais pour perfectionner ma maîtrise de la langue.
 
-Je suis une personne calme, sérieuse et logique. J'apprécie passer du temps avec mes amis et mes proches, ce qui me permet de me détendre et de renforcer les liens importants. Je joue également aux jeux vidéo, un passe-temps qui me permet de rester en contact avec les amis éloignés. Je regarde et lis de nombreuses séries en anglais dans le but de perfectionner ma maîtrise de la langue.
+# Formation Actuelle
 
-## Formation Actuelle
+## BUT Science des Données
+**Établissement** : Université de Poitiers, campus de Niort  
+**Durée** : 3 ans (2022-2025)  
+**Statut** : 3ème année en alternance
 
-**BUT Science des Données (BUT SD)**
-- Formation en alternance
-- Troisième année en cours
+### Nature de la formation
+Formation pluridisciplinaire combinant :
+- **Mathématiques** : statistiques, probabilités, algèbre linéaire
+- **Informatique** : Python, R, SQL, bases de données, développement web
+- **Statistique** : machine learning, data science, visualisation
 
-**En quoi consistent mes études ?**
+### Compétences de formation
+- Collecter et gérer des données
+- Traiter et analyser des données  
+- Visualiser et communiquer des résultats
+- Développer des applications décisionnelles
 
-Le BUT Science des Données est une formation pluridisciplinaire qui combine trois domaines complémentaires :
-- **Mathématiques** : statistiques, probabilités, algèbre linéaire, analyse de données
-- **Informatique** : programmation (Python, R, SQL), bases de données, développement web et logiciel
-- **Statistique** : machine learning, modélisation, data science, visualisation de données
+# Alternance chez Pierre Guérin
 
-Concrètement, j'apprends à collecter, traiter, analyser et valoriser des données pour aider à la prise de décision dans des contextes variés.
+## Entreprise
+Pierre Guérin est une entreprise internationale spécialisée dans les équipements industriels pour les secteurs biopharmaceutique et agroalimentaire.
 
-## Mon Alternance chez Pierre Guérin
+## Poste
+**Alternant Data Analyst - Service Chiffrage**  
+**Durée** : 2ème année d'alternance (BUT 3)
 
-**Ce que je fais concrètement :**
+## Missions principales
 
-Je suis alternant dans le service Chiffrage où je travaille sur les données du service pour automatiser et fiabiliser les processus. Mes principales missions :
-- **Développement de macros VBA** pour automatiser les calculs de prix de revient dans Excel
-- **Création d'un tableau de bord dynamique** centralisant les données du chiffrage
-- **Automatisation du traitement de données** provenant de multiples fichiers Excel métiers (électricité, tuyauterie, automatisme)
-- **Conception d'une base de données** pour centraliser les informations sur les équipements
-- **Collaboration avec les services techniques** pour structurer leurs nomenclatures
+### Automatisation et développement
+- Développement de **macros VBA Excel** pour automatiser les calculs de prix de revient
+- Traitement automatique de données issues de multiples fichiers métiers (électricité, tuyauterie, automatisme)
+- Création de **tableaux de bord dynamiques** pour visualiser et analyser les coûts
 
-En résumé : je développe des outils VBA et des tableaux de bord pour automatiser et fiabiliser le travail du service chiffrage sur les données des équipements industriels.
+### Gestion de données
+- Conception d'une **base de données** centralisant les informations sur les équipements
+- Structuration des nomenclatures avec les services techniques
+- Fiabilisation des méthodes d'estimation des coûts
 
-## Mon Bilan Après Deux Ans
+## Apport de l'alternance
+L'alternance m'a permis de :
+- Appliquer mes compétences dans un **contexte industriel concret**
+- Comprendre que j'apprends mieux **en faisant**
+- Développer **autonomie, rigueur et organisation**
+- Mesurer l'**impact direct** de mes outils sur l'efficacité du service
+- Gagner en **confiance professionnelle**
 
-Ces deux années en BUT Science des Données ont été marquées par une progression continue, tant sur le plan personnel que professionnel. Ma réorientation depuis la licence vers cette formation plus encadrée, concrète et professionnalisante s'est révélée être un excellent choix.
+# Parcours Académique
 
-L'année passée en entreprise m'a permis de comprendre ce qui me correspond vraiment : **apprendre en faisant**. Être confronté à des cas concrets, devoir trouver des solutions réelles à des problèmes métiers, voir l'impact direct de ce que je développe, c'est dans ce cadre-là que je donne le meilleur de moi-même.
+## BUT SD - Année 3 (2024-2025) - En cours
+**Modules** : Deep Learning, Big Data, Visualisation avancée, Méthodologies agiles  
+**Statut** : Alternance chez Pierre Guérin
 
-Au fil de ces deux années, j'ai gagné en maturité, en autonomie et en rigueur. J'ai appris à :
-- Mieux m'organiser dans mon travail et dans le temps
-- Travailler entouré de professionnels
-- Poser des questions au bon moment
-- Affronter les difficultés avec plus de recul
+## BUT SD - Année 2 (2023-2024)
+**Modules** : Programmation avancée, Machine Learning, Big Data, Séries temporelles, Développement web  
+**Projets** : Flash prévisions Mexique (R), Site Ordiginal (PHP/MySQL), Application football (VBA), Collecte données Islande (Python/API)  
+**Statut** : Début de l'alternance chez Pierre Guérin
 
-## Mon Parcours
+## BUT SD - Année 1 (2022-2023)
+**Modules** : Python, R, SQL, Statistiques, Bases de données, Technologies Web  
+**Projets** : SDIS 79 (Python/MySQL), Analyse AcVC (Python/Power BI), PanNote (VBA), Datavisualisation climat (Power BI)  
+**Distinction** : 🏆 **1ère place promotion** - Concours national datavisualisation  
+**Bilan** : Confirmation de ma réorientation, reprise du rythme de travail
 
-Avant le BUT SD, j'ai effectué une première année de licence en Mathématiques et Informatique. À la fin de mon **BAC Sciences et Technologies de l'Industrie et du Développement Durable (STI2D)**, je ne savais pas vraiment quelle orientation choisir.
+## Licence Mathématiques et Informatique (2021-2022)
+**Établissement** : Université de Poitiers  
+**Statut** : Réorientation après 1 an  
+**Raison** : Formation moins encadrée et concrète que mes attentes
 
-Le système d'études en licence ne m'ayant pas convenu, j'ai décidé de me réorienter en BUT SD après avoir fait des Portes Ouvertes et mieux compris ce programme. Cette réorientation correspondait davantage à mes attentes et à mes objectifs professionnels.
+## BAC STI2D (2021)
+**Établissement** : Campus de la providence, Blois  
+**Spécialité** : Sciences et Technologies de l'Industrie et du Développement Durable  
+**Mention** : Bien
 
-## Points Forts
+# Bilan Après Deux Ans
 
-- **Apprentissage par la pratique** : Je m'épanouis dans des environnements concrets
-- **Rigueur et organisation** : Développées durant mon alternance
-- **Travail d'équipe** : Capacité à collaborer efficacement
-- **Autonomie** : Capable de trouver des solutions de manière indépendante
-- **Logique et analyse** : Approche structurée des problèmes
+Ma réorientation depuis la licence vers le BUT SD s'est révélée être un excellent choix. L'alternance m'a permis de comprendre que **j'apprends en faisant** : confronté à des cas concrets, je donne le meilleur de moi-même.
+
+Au fil de ces deux années, j'ai gagné en :
+- **Maturité et autonomie** : gestion du travail de manière indépendante
+- **Rigueur** : attention aux détails et qualité des livrables
+- **Organisation** : gestion du temps et des priorités
+- **Confiance** : capacité à travailler avec des professionnels
+
+# Points Forts
+
+- **Apprentissage pratique** : Épanouissement dans des environnements concrets avec impact mesurable
+- **Automatisation** : Capacité à identifier et automatiser les tâches répétitives
+- **Rigueur et organisation** : Développées en alternance, attention aux détails
+- **Autonomie** : Solutions trouvées de manière indépendante
+- **Collaboration** : Travail efficace en équipe et avec les services métiers
+
+# Langues
+- **Français** : Langue maternelle
+- **Anglais** : Intermédiaire à avancé (B2)
